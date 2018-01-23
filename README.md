@@ -4,10 +4,27 @@ En este repositorio, se encuentran las BBDD de ejemplo propiedad de Microsoft "N
 
 Se incluyen tanto los ficheros scripts como los ficheros MDF/LDF:
 
-- **Instpubs.sql**: contiene los scripts con la definición y carga de datos de "Pubs Database"
+- **instSchool.sql**: contiene los scripts con la definición y carga de datos de "School Database"
 
-- **Instnwnd.sql**: contiene los scripts con la definición y carga de datosde "Northwind Database"
+- **instpubs.sql**: contiene los scripts con la definición y carga de datos de "Pubs Database"
+
+- **instnwnd.sql**: contiene los scripts con la definición y carga de datosde "Northwind Database"
+
+- **School.mdf y School_log.ldf**: BBDD ya preparada con los datos y logs de "School Database"  
 
 - **Pubs.mdf y pubs_log.ldf**: BBDD ya preparada con los datos y logs de "Pubs Database"  
 
 - **Northwind.mdf y northwind.ldf**: BBDD ya preparada con los datos y logs de "Northwind Database"  
+
+## Archivos MDF y LDF
+Cuando se crea una nueva BBDD, SQL Server crea los archivos MDF y LDF correspondientes 
+
+- MDF es Master Database Files, el archivo de datos principal para MSSQL. 
+- MDF es el archivo maestro con toda la definicion de tablas, esquema y los datos en su interior.
+- MDF contiene toda la información vital y necesaria de la base de datos.
+
+    
+- LDF es Log Database Files, el archivo con las transacciones para actualizar datos.
+- LDF es un archivo auxiliar y se caracteriza como un archivo de registro de transacciones del servidor.
+- LDF contiene todas las acciones que incluyen transacciones y cambios realizados en el archivo MDF.
+
