@@ -28,3 +28,9 @@ Cuando se crea una nueva BBDD, SQL Server crea los archivos MDF y LDF correspond
 - LDF es un archivo auxiliar y se caracteriza como un archivo de registro de transacciones del servidor.
 - LDF contiene todas las acciones que incluyen transacciones y cambios realizados en el archivo MDF.
 
+
+## Problemas con archivos scripts SQL en formato Unicode
+Los "archivos.sql" pueden tener formato "Unicode" y dar problemas al abrirlos con SQL Management Studio.
+Para solucionarlo, abrir el "archivo.sql" con Block de Notas y volverlo a guardar con formato "UTF-8".
+
+![notepad](convertir-UTF8.jpg)
